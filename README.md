@@ -1,1 +1,1 @@
-# This is a project on a payment with HTML , CSS , Java Script
+# This is a project on a payment app with HTML , CSS , Java Script
