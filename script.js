@@ -77,7 +77,7 @@ function recharge() {
     return;
   }
 
-  balance += Number(amount); // Add to balance
+  balance -= Number(amount); // sub from balance
   const message = `Recharged ₹${amount} to ${mobile} (${operator})`;
   messageEl.textContent = `✅ ${message}`;
   addTransaction(message);
