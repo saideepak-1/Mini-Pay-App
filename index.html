@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniPay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>👤 Welcome, User</h2>
+        <p>💰 Balance: ₹5,000</p>
+      </header>
+
+      <section class="actions">
+        <button onclick="navigate('send')">📤 Send Money</button>
+        <button onclick="navigate('recharge')">📱 Recharge</button>
+      </section>
+
+      <section class="transactions">
+        <h3>Recent Transactions</h3>
+        <ul id="transactionList">
+          <li>Sent ₹500 to Rahul</li>
+          <li>Recharged ₹149 to Airtel</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Send Money Page -->
+    <div class="page" id="sendPage" style="display: none">
+      <h3>Send Money</h3>
+      <input type="text" id="receiver" placeholder="Receiver Name" />
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <input type="number" id="amount" placeholder="Amount ₹" />
+      <button onclick="sendMoney()">Send</button>
+      <p id="sendMessage"></p>
+      <button onclick="navigate('home')">⬅ Back</button>
+    </div>
+
+    <!-- Recharge Page -->
+    <div class="page" id="rechargePage" style="display: none">
+      <h3>Mobile Recharge</h3>
+      <select id="operator">
+        <option>Airtel</option>
+        <option>Jio</option>
+        <option>Vi</option>
+      </select>
+      <input type="text" id="mobile" placeholder="Mobile Number" />
+      <input type="number" id="rechargeAmount" placeholder="Amount ₹" />
+      <button onclick="recharge()">Recharge</button>
+      <p id="rechargeMessage"></p>
+      <button onclick="navigate('home')">⬅ Back</button>
+    </div>
+
+    <script src="script.js"></script>
+    <audio id="successSound" src="success.mp3" preload="auto"></audio>
+  </body>
+</html>
