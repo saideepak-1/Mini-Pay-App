@@ -6,11 +6,11 @@
     <title>MiniPay</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
+  <body onload="navigate('home')">
+    <div class="container" id="homePage">
       <header>
         <h2>👤 Welcome, User</h2>
-        <p>💰 Balance: ₹5,000</p>
+        <p>💰 Balance: ₹<span id="walletBalance">0.00</span></p>
       </header>
 
       <section class="actions">
@@ -21,8 +21,9 @@
       <section class="transactions">
         <h3>Recent Transactions</h3>
         <ul id="transactionList">
-          <li>Sent ₹500 to Rahul</li>
-          <li>Recharged ₹149 to Airtel</li>
+          <!-- Transactions will appear here -->
+          <li>sent 1000 to Sai</li>
+          <li>Recharged amount of 299 to Jio</li>
         </ul>
       </section>
     </div>
@@ -54,6 +55,6 @@
     </div>
 
     <script src="script.js"></script>
-    <audio id="successSound" src="success.mp3" preload="auto"></audio>
+    <audio id="successSound" src="sound.mp3" preload="auto"></audio>
   </body>
 </html>

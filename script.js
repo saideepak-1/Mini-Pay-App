@@ -1,4 +1,4 @@
-let balance = 5000; // Initial balance in the wallet
+let balance = 10000; // Initial balance in the wallet
 
 function navigate(page) {
   document.querySelector('.container').style.display =
