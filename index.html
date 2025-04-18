@@ -24,7 +24,7 @@
           <!-- Transactions will appear here -->
           <li>Sent 1000 to Sai</li>
           <li>Recharged amount of 299 to Airtel</li>
-          <li>Sent 2000 to Wayne Enterprises</li>
+          <li>Sent 2000 to Pg Owner</li>
         </ul>
       </section>
     </div>
@@ -34,7 +34,7 @@
       <h3>Send Money</h3>
       <input type="text" id="receiver" placeholder="Receiver Name" />
       <input type="text" id="phone" placeholder="Phone Number" />
-      <input type="number" id="amount" placeholder="Amount ₹" />
+      <input type="number" id="amount" placeholder="Amount ₹" min="1" />
       <button onclick="sendMoney()">Send</button>
       <p id="sendMessage"></p>
       <button onclick="navigate('home')">⬅ Back</button>
@@ -49,13 +49,13 @@
         <option>Vi</option>
       </select>
       <input type="text" id="mobile" placeholder="Mobile Number" />
-      <input type="number" id="rechargeAmount" placeholder="Amount ₹" />
+      <input type="number" id="rechargeAmount" placeholder="Amount ₹" min="1" />
       <button onclick="recharge()">Recharge</button>
       <p id="rechargeMessage"></p>
       <button onclick="navigate('home')">⬅ Back</button>
     </div>
 
     <script src="script.js"></script>
-    <audio id="successSound" src="success.mp3" preload="auto"></audio>
+    <audio id="successSound" src="success1.mp3" preload="auto"></audio>
   </body>
 </html>
