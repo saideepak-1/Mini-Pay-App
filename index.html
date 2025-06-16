@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniPay</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="login-section" class="card">
+        <h2>🔐 MiniPay Login</h2>
+        <h3>Welcome User , Enter your credentials to Login</h3>
+        <input type="text" id="username" placeholder="Enter username" />
+        <input type="password" id="password" placeholder="Enter password" />
+        <button onclick="login()">Login</button>
+      </div>
+
+      <div id="features" class="card hidden">
+        <h2>🚀 Wallet Features</h2>
+        <button onclick="checkBalance()">💰 Check Balance</button>
+        <input type="text" id="receiver" placeholder="Receiver name" />
+        <input type="number" id="amount" placeholder="Amount to send" />
+        <button onclick="sendMoney()">📤 Send Money</button>
+        <input
+          type="number"
+          id="rechargeAmount"
+          placeholder="Recharge amount"
+        />
+        <button onclick="rechargeWallet()">🔄 Recharge Wallet</button>
+        <button onclick="viewTransactionHistory()">📄 View Transactions</button>
+        <button onclick="logout()">📕 Logout</button>
+      </div>
+
+      <div id="message" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
